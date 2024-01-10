@@ -1,0 +1,9 @@
+1.	Para instalar e configurar o Docker em um host EC2, você pode seguir os seguintes passos:
+Atualizar os pacotes em sua instancia EC2. Usei o comando sudo yum update-v 
+Para instalar o Docker no caso de uma imagem  Amazon Linux usei o sudo yum install docker-y 
+       Para o ubuntu
+sudo apt-get install -y cloud-utils apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install -y docker-ce
